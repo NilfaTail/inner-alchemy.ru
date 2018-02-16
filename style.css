@@ -28,13 +28,23 @@ body {
     text-align: center;
 }
 
-.tree {
+.sephir-block {
     background: #cfe7fa; /* Old browsers */
     background: -moz-linear-gradient(-45deg, #cfe7fa 0%, #6393c1 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(-45deg, #cfe7fa 0%,#6393c1 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(135deg, #cfe7fa 0%,#6393c1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfe7fa', endColorstr='#6393c1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ 
+    width: 600px;
+    margin: auto;
+    position: relative;
 }
+/*.tree {
+    background: #cfe7fa; 
+    background: -moz-linear-gradient(-45deg, #cfe7fa 0%, #6393c1 100%); 
+    background: -webkit-linear-gradient(-45deg, #cfe7fa 0%,#6393c1 100%); 
+    background: linear-gradient(135deg, #cfe7fa 0%,#6393c1 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfe7fa', endColorstr='#6393c1',GradientType=1 ); 
+}*/
 g.sephir circle {
     fill: #fff;
     stroke: orange;
@@ -134,7 +144,7 @@ g.sephir:hover text {
     line-height: 1.2;
     position: absolute;
     top: 10px;
-    left: 85px;
+    left: 10px;
     font-size: 13px;
 }
 .description h4 {
