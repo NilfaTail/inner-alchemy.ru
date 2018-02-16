@@ -13,7 +13,6 @@ body {
     text-align: center;
     padding: 0;
     margin: 0;
-    
 }
 .title h1 {
     font-size: 2em;
@@ -24,6 +23,9 @@ body {
     font-size: 1.4em;
     padding: 0;
     margin: 6px 0;
+}
+.center-align {
+    text-align: center;
 }
 
 .tree {
