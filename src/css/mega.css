@@ -22,6 +22,9 @@ header {
 	margin-bottom: 20px;
 }
 
+
+/* typography */
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto Slab', serif;
 }
@@ -29,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 	padding-bottom: 10px;
     margin: 10px 0 20px;
-    border-bottom: 1px solid #656a73;
+    border-bottom: 1px solid #AFB1BE;
 }
 
 h2 {
@@ -56,6 +59,12 @@ h6 {
 	font-size: 16px;
 	margin: 10px 0;
 }
+
+/* common styles */
+.clear {
+    clear: both;
+}
+
 .small {
 	font-size: 0.8em;
 }
@@ -99,16 +108,21 @@ ul.nav.nav-side {
     float: left;
     padding: 10px 10px 20px;
 }
+
+/*block right*/
+
 aside {
-    width: 24%;
-    background: #ddd;
+	width: 24%;
     float: left;
-    padding: 10px 10px 10px 40px;
-    margin: 0 0 0 15px;
+    margin: 0 0 0 20px;
 }
-.clear {
-    clear: both;
+.block-right {
+    border: 1px solid #AFB1BE;
+    padding: 10px 20px;
+    margin-bottom: 40px;
 }
+.block-right-title {}
+.block-right-content {}
 
 /***/
 
@@ -125,17 +139,23 @@ aside {
 }
 
 
+
+
+
+
+
+/* sephira style */
+
 .sephir-block {
-    background: #cfe7fa; /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #cfe7fa 0%, #6393c1 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #cfe7fa 0%,#6393c1 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #cfe7fa 0%,#6393c1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfe7fa', endColorstr='#6393c1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ 
+    background: #cfe7fa;
+    background: -moz-linear-gradient(-45deg, #cfe7fa 0%, #6393c1 100%);
+    background: -webkit-linear-gradient(-45deg, #cfe7fa 0%,#6393c1 100%);
+    background: linear-gradient(135deg, #cfe7fa 0%,#6393c1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfe7fa', endColorstr='#6393c1',GradientType=1 );
     width: 600px;
     margin: auto;
     position: relative;
 }
-
 g.sephir circle {
     fill: #fff;
     stroke: orange;
@@ -148,11 +168,9 @@ g.sephir text {
     text-anchor: middle;
     alignment-baseline: middle;
 }
-
 g.sephir {
     cursor: pointer;
 }
-
 g.sephir:hover circle {
     transition: 0.5s;
     r:35;
@@ -169,12 +187,10 @@ g.sephir:hover text {
 .sephir.sephir-kether circle {
     fill: gold;
 }
-
 .sephir.sephir-chokmah circle {
     fill: white;
     stroke: #dedede;
 }
-
 .sephir.sephir-binah circle {
     fill: #292828;
     stroke: #dedede;
@@ -224,17 +240,18 @@ g.sephir:hover text {
 /***/
 
 .description {
-    width: 160px;
+    width: 90%;
+    height: 200px;
     margin: auto;
     border: 1px solid #a9a9a9;
     background: #eee;
-    padding: 5px;
+    padding: 5px 10px;
     text-align: left;
     line-height: 1.2;
     position: absolute;
-    top: 10px;
-    left: 10px;
-    font-size: 13px;
+    bottom: 50px;
+    left: 15px;
+    font-size: 1em;
 }
 .description h4 {
     padding: 0;
