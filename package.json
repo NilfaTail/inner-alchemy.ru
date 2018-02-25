@@ -1,0 +1,27 @@
+{
+  "name": "inner-alchemy.ru",
+  "version": "1.0.0",
+  "description": "yo!",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NilfaTail/inner-alchemy.ru.git"
+  },
+  "author": "Djardha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NilfaTail/inner-alchemy.ru/issues"
+  },
+  "homepage": "https://github.com/NilfaTail/inner-alchemy.ru#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-concat-css": "^3.0.0",
+    "gulp-ftp": "^1.1.0",
+    "gulp-sass": "^3.1.0"
+  }
+}
