@@ -93,6 +93,7 @@ ul.nav {
 ul.nav.nav-top li {
   display: inline-block;
   padding: 15px 10px;
+  position: relative;
 }
 ul.nav.nav-top li a {
   color: #C9D3E1;
@@ -122,6 +123,20 @@ ul.nav.nav-top li a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+ul.nav.nav-top.nav-second {
+  position: absolute;
+  background: rgba(49, 55, 64, 0.9);
+  min-width: 220px;
+  top: 58px;
+  left: 0;
+  display: none;
+}
+
+ul.nav.nav-top li:hover ul.nav.nav-top.nav-second {
+  display: block;
+}
+
 
 /*
 ** navigation-vertical

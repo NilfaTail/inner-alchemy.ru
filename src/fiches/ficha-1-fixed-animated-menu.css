@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+/* menu button */
+.link-menu {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px #393939;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9;
+}
+.link-menu span,
+.link-menu span:after,
+.link-menu span:before {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: #333;
+    position: absolute;
+    left: 50%;
+    margin-left: -9px;
+    top: 50%;
+    margin-top: -1px;
+}
+.link-menu span:before {
+    content: '';
+    margin-top: -5px;
+    transition: all 0.25s;
+}
+.link-menu span:after {
+    content: '';
+    margin-top: 3px;
+    transition: all 0.25s;
+}
+/* make the cross from burger :) */
+.link-menu.link-menu_active span {
+    background: transparent;
+}
+.link-menu.link-menu_active span:before {
+    transform: rotate(135deg);
+    margin-top: 0;
+}
+.link-menu.link-menu_active span:after {
+    transform: rotate(-135deg);
+    margin-top: 0;
+}
+
+/* menu list */
+.top-menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: purple;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -100vw;
+}
+.top-menu_active {
+    left:0;
+}
+.top-menu ul {
+    list-style: none;
+    padding: 0;
+    
+}
+.top-menu ul li {
+    width: 100vw;
+    text-align: center;    
+}
+.top-menu ul li a {
+    display: block;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 0;
+    letter-spacing: 4;
+}
+.top-menu ul li a:hover {
+    background-color: rgba(255,255,255,0.4);
+}
+
+/* sections */
+
+section {
+    width: 75%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 10px;
+}
